@@ -1,9 +1,13 @@
-* { margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   background: black;
   font-family: Lato, sans-serif;
   color: #41444F;
+  box-sizing: border-box;
 }
 
 img {
@@ -33,22 +37,22 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(90deg, blue, rgb(120, 162, 197),rgb(238, 123, 35), red);
+  background: linear-gradient(90deg, blue, rgb(120, 162, 197), rgb(238, 123, 35), red);
 }
-
-
 
 #blastoise {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 85%;
+  margin: auto;
 }
 
 #charizard {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 #pikachu {
@@ -59,22 +63,37 @@ fieldset {
 
 header {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 #survey-form {
   grid-area: form;
   display: flex;
   flex-direction: column;
-  border: 1px black solid;
+  border: 1px #41444F solid;
   border-radius: 0.5rem;
   padding: 1rem 4rem 4rem 4rem;
   margin: 3rem;
   background: white;
-  width: 40vw;
+  width: 90vw;
+  box-shadow: 7px 7px 8px -5px rgba(0, 0, 0, 0.27);
+}
+
+abbr {
+  color: red;
 }
 
 .margin-gap {
   margin: .6rem 0 .6rem 0;
+}
+
+#pokemon-caught {
+  display: flex;
+  flex-direction: column;
+}
+
+#name, #email, #number {
+  width: 35%;
 }
 
 .radio-container {
@@ -84,7 +103,7 @@ header {
 }
 
 .radio-container img {
-  width: 30%;
+  width: 40%;
   margin: auto;
 }
 
@@ -99,10 +118,59 @@ legend {
   padding-bottom: 1rem;
 }
 
+textarea {
+  width: 100%;
+}
+
+#submit {
+  width: 20%;
+  padding: .5rem;
+  margin: auto;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: .5rem;
+}
+
+#submit:hover {
+  background: rgb(250, 214, 30);
+  color: rgb(249, 43, 24);
+  border: black 1px solid;
+}
+
+input:focus {
+  box-shadow: 0 0 5px 1px blue;
+}
+
 input:invalid {
   box-shadow: 0 0 5px 1px red;
 }
 
 input:focus:invalid {
   outline: none;
+}
+
+@media (max-width: 1100px) {
+  #survey-form {
+    width: 50vw;
+  }
+
+  #blastoise {
+    display: none
+  }
+
+  #charizard {
+    display: none
+  }
+}
+
+@media (max-width: 755px) {
+  #survey-form {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 450px) {
+  #survey-form {
+    width: 100vw;
+  }
 }

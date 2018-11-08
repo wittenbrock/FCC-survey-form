@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <title>Document</title>
+  <title>Pokemon Survey</title>
 </head>
+
 <body>
 
   <div class="wrapper">
@@ -36,12 +38,12 @@
       </div>
 
       <div class="margin-gap">
-        <label for="email id="email-label" class="bold">Email:<abbr title="This field is mandatory">*</abbr></label>
+        <label for="email id=" email-label" class="bold">Email:<abbr title="This field is mandatory">*</abbr></label>
         <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
       </div>
 
 
-      <div class="margin-gap">
+      <div id="pokemon-caught" class="margin-gap">
         <label for="number" id="number-label" class="bold">How many Pokemon have you caught?</label>
         <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
       </div>
@@ -57,17 +59,23 @@
         </select>
       </fieldset>
 
-    <fieldset class="margin-gap">
-      <legend class="bold">What starting Pokemon did you choose?</legend>
-      <div class="radio-container" >
-        <figure><img src="pictures/squirtle.png" alt="squirtle"><figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption></figure>
-        <figure><img src="pictures/bulbasaur.png" alt="bulbasaur"><figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption></figure>
-        <figure><img src="pictures/charmander.png" alt="charmander"><figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption></figure>
-        <label for="squirtle"><input id="squirtle" type="radio" name="radio-button" value="squirtle"></label>
-        <label for="bulbasaur"><input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default></label>
-        <label for="charmander"><input id="charmander" type="radio" name="radio-button" value="charmander"></label>
-      </div>
-    </fieldset>
+      <fieldset class="margin-gap">
+        <legend class="bold">What starting Pokemon did you choose?</legend>
+        <div class="radio-container">
+          <figure><img src="pictures/squirtle.png" alt="squirtle">
+            <figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption>
+          </figure>
+          <figure><img src="pictures/bulbasaur.png" alt="bulbasaur">
+            <figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption>
+          </figure>
+          <figure><img src="pictures/charmander.png" alt="charmander">
+            <figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption>
+          </figure>
+          <label for="squirtle"><input id="squirtle" type="radio" name="radio-button" value="squirtle"></label>
+          <label for="bulbasaur"><input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default></label>
+          <label for="charmander"><input id="charmander" type="radio" name="radio-button" value="charmander"></label>
+        </div>
+      </fieldset>
 
       <fieldset class="margin-gap">
         <legend class="bold">What are your favorite types of Pokemon?</legend>
@@ -115,4 +123,5 @@
   </div>
   <!-- Wrapper Ends -->
 </body>
+
 </html>
