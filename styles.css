@@ -32,7 +32,7 @@ fieldset {
   top: auto;
   overflow: hidden;
 }
-
+/* Wrapper */
 .wrapper {
   display: flex;
   align-items: center;
@@ -40,6 +40,7 @@ fieldset {
   background: linear-gradient(90deg, blue, rgb(120, 162, 197), rgb(238, 123, 35), red);
 }
 
+/* Background Pokemon */
 #blastoise {
   display: flex;
   align-items: center;
@@ -55,19 +56,7 @@ fieldset {
   margin: auto;
 }
 
-#pikachu {
-  width: 30%;
-  min-width: 5rem;
-  margin: auto;
-  padding-top: 2rem;
-  padding-left: 2.5rem;
-}
-
-header {
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
+/* Inside Survey Form */
 #survey-form {
   grid-area: form;
   display: flex;
@@ -79,6 +68,15 @@ header {
   background: white;
   width: 90vw;
   box-shadow: 7px 7px 8px -5px rgba(0, 0, 0, 0.27);
+}
+
+header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+legend {
+  padding-bottom: 1rem;
 }
 
 abbr {
@@ -126,10 +124,6 @@ abbr {
   justify-content: center;
 }
 
-legend {
-  padding-bottom: 1rem;
-}
-
 textarea {
   width: 100%;
 }
@@ -150,6 +144,14 @@ textarea {
   border: black 1px solid;
 }
 
+#pikachu {
+  width: 30%;
+  min-width: 5rem;
+  margin: auto;
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+}
+
 input:focus {
   box-shadow: 0 0 5px 1px blue;
 }
@@ -162,6 +164,7 @@ input:focus:invalid {
   outline: none;
 }
 
+/* Media Queries */
 @media (max-width: 1100px) {
   #survey-form {
     width: 50vw;

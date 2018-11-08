@@ -32,21 +32,25 @@
         <p id="description" class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo.</p>
       </header>
 
+      <!-- Name -->
       <div class="margin-gap">
         <label for="name" id="name-label" class="bold">Name:<abbr title="This field is mandatory">*</abbr></label>
         <input id="name" type="text" name="name" placeholder="Ash Ketchum" required>
       </div>
 
+      <!-- Email -->
       <div class="margin-gap">
         <label for="email id=" email-label" class="bold">Email:<abbr title="This field is mandatory">*</abbr></label>
         <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
       </div>
 
+      <!-- Pokemon Caught -->
       <div id="pokemon-caught" class="margin-gap">
         <label for="number" id="number-label" class="bold">How many Pokemon have you caught?</label>
         <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
       </div>
 
+      <!-- Dropdown -->
       <fieldset class="margin-gap">
         <legend class="bold">When did you first start playing Pokemon?</legend>
         <select id="dropdown" name="drop-down">
@@ -58,6 +62,7 @@
         </select>
       </fieldset>
 
+      <!-- Radio Buttons -->
       <fieldset class="margin-gap">
         <legend class="bold">What starting Pokemon did you choose?</legend>
         <div class="radio-container">
@@ -85,6 +90,7 @@
         </div>
       </fieldset>
 
+      <!-- Checkboxes -->
       <fieldset class="margin-gap">
         <legend class="bold">What are your favorite types of Pokemon?</legend>
         <div class="checkbox-container">
@@ -108,11 +114,13 @@
         </div>
       </fieldset>
 
+      <!-- Text area -->
       <fieldset class="margin-gap">
         <legend class="bold">What did you enjoy most about Pokemon?</legend>
         <textarea name="name" rows="8" cols="80"></textarea>
       </fieldset>
 
+      <!-- Submit Button -->
       <button id="submit" type="submit" name="submit-button">Submit</button>
 
       <figure>
