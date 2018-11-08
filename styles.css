@@ -167,10 +167,9 @@ input:focus:invalid {
     width: 50vw;
   }
 
-  #blastoise, #charizard  {
+  #blastoise, #charizard {
     display: none
   }
-
 }
 
 @media (max-width: 755px) {
@@ -180,7 +179,6 @@ input:focus:invalid {
 }
 
 @media (max-width: 450px) {
-
   .radio-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -192,32 +190,8 @@ input:focus:invalid {
     flex-direction: column;
   }
 
-.radio-container {
-  display: flex;
-  flex-direction: column;
-}
-
-  /* #sqirtle {
-    order: 6;
+  .radio-container {
+    display: flex;
+    flex-direction: column;
   }
-
-  #sqirtle-image {
-    order: 4;
-  }
-
-  #bulbasaur {
-    order: 2;
-  }
-
-  #bulbasaur-image {
-    order: 5;
-  }
-
-  #charmander {
-    order: 3;
-  }
-
-  #charmander-image {
-    order: 1;
-  } */
 }
