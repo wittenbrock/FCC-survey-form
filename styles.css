@@ -3,7 +3,7 @@
 html {
   background: black;
   font-family: Lato, sans-serif;
-
+  color: #41444F;
 }
 
 img {
@@ -73,11 +73,14 @@ header {
   width: 40vw;
 }
 
+.margin-gap {
+  margin: .6rem 0 .6rem 0;
+}
+
 .radio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  margin: 1rem 0 1rem 0;
 }
 
 .radio-container img {
@@ -90,9 +93,11 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   justify-content: center;
-  margin: 1rem 0 1rem 0;
 }
 
+legend {
+  padding-bottom: 1rem;
+}
 
 input:invalid {
   box-shadow: 0 0 5px 1px red;
