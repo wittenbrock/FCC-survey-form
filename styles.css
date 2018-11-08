@@ -17,7 +17,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(90deg, rgb(120, 162, 197), white, rgb(238, 123, 35));
+  background: linear-gradient(90deg, blue, rgb(120, 162, 197),rgb(238, 123, 35), red);
 }
 
 img {
@@ -50,10 +50,29 @@ img {
   flex-direction: column;
   border: 1px black solid;
   border-radius: 0.5rem;
-  background: white;
-  padding: 4rem;
+  padding: 1rem 4rem 4rem 4rem;
   margin: 3rem;
+  background: white;
 }
+
+.radio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.radio-container img {
+  width: 30%;
+  margin: auto;
+}
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+}
+
 
 /* #survey-form > * {
   padding: 1rem;
