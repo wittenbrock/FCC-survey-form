@@ -1,6 +1,8 @@
 * { margin: 0; padding: 0; }
 
-
+html {
+  background: black;
+}
 
 .sr-only {
   position: absolute;
@@ -15,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background: linear-gradient(90deg, rgb(120, 162, 197), white, rgb(238, 123, 35));
 }
 
 img {
@@ -47,7 +50,7 @@ img {
   flex-direction: column;
   border: 1px black solid;
   border-radius: 0.5rem;
-  background-color: olive;
+  background: white;
   padding: 4rem;
   margin: 3rem;
 }
