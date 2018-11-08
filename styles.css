@@ -2,6 +2,22 @@
 
 html {
   background: black;
+  font-family: Lato, sans-serif;
+
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+fieldset {
+  border: 0;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .sr-only {
@@ -20,11 +36,7 @@ html {
   background: linear-gradient(90deg, blue, rgb(120, 162, 197),rgb(238, 123, 35), red);
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-}
+
 
 #blastoise {
   display: flex;
@@ -42,6 +54,11 @@ img {
 #pikachu {
   width: 30%;
   margin: auto;
+  padding-top: 2rem;
+}
+
+header {
+  text-align: center;
 }
 
 #survey-form {
@@ -53,12 +70,14 @@ img {
   padding: 1rem 4rem 4rem 4rem;
   margin: 3rem;
   background: white;
+  width: 40vw;
 }
 
 .radio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  margin: 1rem 0 1rem 0;
 }
 
 .radio-container img {
@@ -71,16 +90,9 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   justify-content: center;
+  margin: 1rem 0 1rem 0;
 }
 
-
-/* #survey-form > * {
-  padding: 1rem;
-} */
-
-header {
-  text-align: center;
-}
 
 input:invalid {
   box-shadow: 0 0 5px 1px red;

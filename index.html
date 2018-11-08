@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -29,17 +30,17 @@
         <p id="description" class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo.</p>
       </header>
 
-      <label for="name" id="name-label">Name:<abbr title="This field is mandatory">*</abbr></label>
+      <label for="name" id="name-label" class="bold">Name:<abbr title="This field is mandatory">*</abbr></label>
       <input id="name" type="text" name="name" placeholder="Ash Ketchum" required>
 
-      <label for="email id="email-label">Email:<abbr title="This field is mandatory">*</abbr></label>
+      <label for="email id="email-label" class="bold">Email:<abbr title="This field is mandatory">*</abbr></label>
       <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
 
-      <label for="number" id="number-label">How many Pokemon have you caught?</label>
+      <label for="number" id="number-label" class="bold">How many Pokemon have you caught?</label>
       <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
 
       <fieldset>
-        <legend>When did you first start playing Pokemon?</legend>
+        <legend class="bold">When did you first start playing Pokemon?</legend>
         <select id="dropdown" name="drop-down">
           <option value="elementary-school">Elementary School</option>
           <option value="middle-school">Middle School</option>
@@ -50,7 +51,7 @@
       </fieldset>
 
     <fieldset>
-      <legend>What starting Pokemon did you choose?</legend>
+      <legend class="bold">What starting Pokemon did you choose?</legend>
       <div class="radio-container">
         <figure><img src="pictures/squirtle.png" alt="squirtle"><figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption></figure>
         <figure><img src="pictures/bulbasaur.png" alt="bulbasaur"><figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption></figure>
@@ -62,7 +63,7 @@
     </fieldset>
 
       <fieldset>
-        <legend>What are your favorite types of Pokemon?</legend>
+        <legend class="bold">What are your favorite types of Pokemon?</legend>
         <div class="checkbox-container">
           <label for="bug"><input id="bug" type="checkbox" name="check-boxes" value="bug"> Bug</label>
           <label for="dragon"><input id="dragon" type="checkbox" name="check-boxes" value="dragon"> Dragon</label>
@@ -84,8 +85,11 @@
         </div>
       </fieldset>
 
+      <fieldset>
+        <legend class="bold">What did you enjoy most about Pokemon?</legend>
+        <textarea name="name" rows="8" cols="80"></textarea>
+      </fieldset>
 
-      <textarea name="name" rows="8" cols="80"></textarea>
 
       <button id="submit" type="submit" name="submit-button">Submit</button>
 
