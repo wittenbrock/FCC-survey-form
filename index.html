@@ -13,7 +13,7 @@
 
     <figure>
       <img id="blastoise" src="pictures/blastoise-800x800.png" alt="Blastoise">
-      <figcaption class="sr-only">A picture of the water Pokemon Blastoise.</figcaption>
+      <figcaption class="sr-only">A picture of the water Pokemon Blastoise in the background.</figcaption>
     </figure>
 
     <!-- Survey Form -->
@@ -35,50 +35,54 @@
       <label for="email id="email-label">Email:<abbr title="This field is mandatory">*</abbr></label>
       <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
 
-      <label for="number" id="number-label">How many Pokemon did you catch?</label>
+      <label for="number" id="number-label">How many Pokemon have you caught?</label>
       <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
 
-      <legend>When did you first start playing Pokemon?</legend>
-      <select id="dropdown" name="drop-down">
-        <option value="elemntary-school">Elementary School</option>
-        <option value="middle-school">Middle School</option>
-        <option value="high-school">High School</option>
-        <option value="univeristy">University</option>
-        <option value="after-university">After University</option>
-      </select>
+      <fieldset>
+        <legend>When did you first start playing Pokemon?</legend>
+        <select id="dropdown" name="drop-down">
+          <option value="elementary-school">Elementary School</option>
+          <option value="middle-school">Middle School</option>
+          <option value="high-school">High School</option>
+          <option value="univeristy">University</option>
+          <option value="after-university">After University</option>
+        </select>
+      </fieldset>
 
-    <legend>What starting Pokemon did you choose?</legend>
-    <div class="radio-container">
-      <figure><img src="pictures/bulbasaur.png" alt="bulbasaur"><figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption></figure>
-      <figure><img src="pictures/charmander.png" alt="charmander"><figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption></figure>
-      <figure><img src="pictures/squirtle.png" alt="squirtle"><figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption></figure>
-      <label for="bulbasaur"><input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default></label>
-      <label for="charmander"><input id="charmander" type="radio" name="radio-button" value="charmander"></label>
-      <label for="squirtle"><input id="squirtle" type="radio" name="radio-button" value="squirtle"></label>
-    </div>
-
-
-      <legend>What are your favorite types of Pokemon?</legend>
-      <div class="checkbox-container">
-        <label for="bug"><input id="bug" type="checkbox" name="check-boxes" value="bug"> Bug</label>
-        <label for="dragon"><input id="dragon" type="checkbox" name="check-boxes" value="dragon"> Dragon</label>
-        <label for="ice"><input id="ice" type="checkbox" name="check-boxes" value="ice"> Ice</label>
-        <label for="fighting"><input id="fighting" type="checkbox" name="check-boxes" value="fighting"> Fighting</label>
-        <label for="fire"><input id="fire" type="checkbox" name="check-boxes" value="fire"> Fire</label>
-
-        <label for="flying"><input id="flying" type="checkbox" name="check-boxes" value="flying"> Flying</label>
-        <label for="grass"><input id="grass" type="checkbox" name="check-boxes" value="grass"> Grass</label>
-        <label for="ghost"><input id="ghost" type="checkbox" name="check-boxes" value="ghost"> Ghost</label>
-        <label for="ground"><input id="ground" type="checkbox" name="check-boxes" value="ground"> Ground</label>
-        <label for="electric"><input id="electric" type="checkbox" name="check-boxes" value="electric"> Electric</label>
-
-        <label for="normal"><input id="normal" type="checkbox" name="check-boxes" value="normal"> Normal</label>
-        <label for="poison"><input id="poison" type="checkbox" name="check-boxes" value="poison"> Poison</label>
-        <label for="psychic"><input id="psychic" type="checkbox" name="check-boxes" value="psychic"> Psychic</label>
-        <label for="rock"><input id="rock" type="checkbox" name="check-boxes" value="rock"> Rock</label>
-        <label for="water"><input id="water" type="checkbox" name="check-boxes" value="water"> Water</label>
+    <fieldset>
+      <legend>What starting Pokemon did you choose?</legend>
+      <div class="radio-container">
+        <figure><img src="pictures/squirtle.png" alt="squirtle"><figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption></figure>
+        <figure><img src="pictures/bulbasaur.png" alt="bulbasaur"><figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption></figure>
+        <figure><img src="pictures/charmander.png" alt="charmander"><figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption></figure>
+        <label for="squirtle"><input id="squirtle" type="radio" name="radio-button" value="squirtle"></label>
+        <label for="bulbasaur"><input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default></label>
+        <label for="charmander"><input id="charmander" type="radio" name="radio-button" value="charmander"></label>
       </div>
+    </fieldset>
 
+      <fieldset>
+        <legend>What are your favorite types of Pokemon?</legend>
+        <div class="checkbox-container">
+          <label for="bug"><input id="bug" type="checkbox" name="check-boxes" value="bug"> Bug</label>
+          <label for="dragon"><input id="dragon" type="checkbox" name="check-boxes" value="dragon"> Dragon</label>
+          <label for="ice"><input id="ice" type="checkbox" name="check-boxes" value="ice"> Ice</label>
+          <label for="fighting"><input id="fighting" type="checkbox" name="check-boxes" value="fighting"> Fighting</label>
+          <label for="fire"><input id="fire" type="checkbox" name="check-boxes" value="fire"> Fire</label>
+
+          <label for="flying"><input id="flying" type="checkbox" name="check-boxes" value="flying"> Flying</label>
+          <label for="grass"><input id="grass" type="checkbox" name="check-boxes" value="grass"> Grass</label>
+          <label for="ghost"><input id="ghost" type="checkbox" name="check-boxes" value="ghost"> Ghost</label>
+          <label for="ground"><input id="ground" type="checkbox" name="check-boxes" value="ground"> Ground</label>
+          <label for="electric"><input id="electric" type="checkbox" name="check-boxes" value="electric"> Electric</label>
+
+          <label for="normal"><input id="normal" type="checkbox" name="check-boxes" value="normal"> Normal</label>
+          <label for="poison"><input id="poison" type="checkbox" name="check-boxes" value="poison"> Poison</label>
+          <label for="psychic"><input id="psychic" type="checkbox" name="check-boxes" value="psychic"> Psychic</label>
+          <label for="rock"><input id="rock" type="checkbox" name="check-boxes" value="rock"> Rock</label>
+          <label for="water"><input id="water" type="checkbox" name="check-boxes" value="water"> Water</label>
+        </div>
+      </fieldset>
 
 
       <textarea name="name" rows="8" cols="80"></textarea>
@@ -87,14 +91,14 @@
 
       <figure>
         <img id="pikachu" src="pictures/pikachu.png" alt="Pikachu">
-        <figcaption class="sr-only">A picture of the electic pokemon Pikachu.</figcaption>
+        <figcaption class="sr-only">A picture of the electic Pokemon Pikachu.</figcaption>
       </figure>
     </form>
     <!-- Form Ends -->
 
     <figure>
       <img id="charizard" src="pictures/charizard-800x800.png" alt="Charizard">
-      <figcaption class="sr-only">A picture of the fire Pokemon Charizard.</figcaption>
+      <figcaption class="sr-only">A picture of the fire Pokemon Charizard in the background.</figcaption>
     </figure>
 
   </div>
