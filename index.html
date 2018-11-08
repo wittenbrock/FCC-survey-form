@@ -62,18 +62,29 @@
       <fieldset class="margin-gap">
         <legend class="bold">What starting Pokemon did you choose?</legend>
         <div class="radio-container">
-          <figure><img src="pictures/squirtle.png" alt="squirtle">
-            <figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption>
-          </figure>
-          <figure><img src="pictures/bulbasaur.png" alt="bulbasaur">
-            <figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption>
-          </figure>
-          <figure><img src="pictures/charmander.png" alt="charmander">
-            <figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption>
-          </figure>
-          <label for="squirtle"><input id="squirtle" type="radio" name="radio-button" value="squirtle"></label>
-          <label for="bulbasaur"><input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default></label>
-          <label for="charmander"><input id="charmander" type="radio" name="radio-button" value="charmander"></label>
+
+          <div class="squirtle-container">
+            <figure><img id="squirtle-image" src="pictures/squirtle.png" alt="squirtle">
+              <figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption>
+            </figure>
+            <label for="squirtle"><input id="squirtle" type="radio" name="radio-button" value="squirtle"></label>
+          </div>
+
+          <div class="bulbasaur-container">
+            <figure><img id="bulbasaur-image" src="pictures/bulbasaur.png" alt="bulbasaur">
+              <figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption>
+            </figure>
+            <label for="bulbasaur"><input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default></label>
+          </div>
+
+          <div class="charmander-container">
+            <figure><img id="charmander-image" src="pictures/charmander.png" alt="charmander">
+              <figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption>
+            </figure>
+            <label for="charmander"><input id="charmander" type="radio" name="radio-button" value="charmander" checked></label>
+          </div>
+
+
         </div>
       </fieldset>
 

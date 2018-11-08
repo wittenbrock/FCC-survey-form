@@ -57,8 +57,10 @@ fieldset {
 
 #pikachu {
   width: 30%;
+  min-width: 5rem;
   margin: auto;
   padding-top: 2rem;
+  padding-left: 2.5rem;
 }
 
 header {
@@ -94,16 +96,26 @@ abbr {
 
 #name, #email, #number {
   width: 35%;
+  min-width: 10rem;
 }
 
 .radio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  justify-content: center;
+}
+
+.radio-container input {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .radio-container img {
   width: 40%;
+  min-width: 4rem;
   margin: auto;
 }
 
@@ -123,6 +135,7 @@ textarea {
 }
 
 #submit {
+  min-width: 3.5rem;
   width: 20%;
   padding: .5rem;
   margin: auto;
@@ -154,13 +167,10 @@ input:focus:invalid {
     width: 50vw;
   }
 
-  #blastoise {
+  #blastoise, #charizard  {
     display: none
   }
 
-  #charizard {
-    display: none
-  }
 }
 
 @media (max-width: 755px) {
@@ -170,7 +180,44 @@ input:focus:invalid {
 }
 
 @media (max-width: 450px) {
-  #survey-form {
-    width: 100vw;
+
+  .radio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
+
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+  /* #sqirtle {
+    order: 6;
+  }
+
+  #sqirtle-image {
+    order: 4;
+  }
+
+  #bulbasaur {
+    order: 2;
+  }
+
+  #bulbasaur-image {
+    order: 5;
+  }
+
+  #charmander {
+    order: 3;
+  }
+
+  #charmander-image {
+    order: 1;
+  } */
 }
