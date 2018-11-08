@@ -4,29 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Document</title>
 </head>
 <body>
 
   <div class="wrapper">
 
+    <figure>
+      <img id="blastoise" src="pictures/blastoise-800x800.png" alt="Blastoise">
+      <figcaption class="sr-only">A picture of the water Pokemon Blastoise.</figcaption>
+    </figure>
+
     <!-- Survey Form -->
     <form id="survey-form">
 
       <!-- Survey Title -->
       <header>
-        <h1 id="title">Survey Title</h1>
-        <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo.</p>
+        <figure>
+          <img src="pictures/pokemon.png" alt="Pokemon Logo">
+          <figcaption class="sr-only">A picture of the Pokemon logo.</figcaption>
+        </figure>
+        <h1 id="title" class="sr-only">Pokemon Survey</h1>
+        <p id="description" class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo.</p>
       </header>
 
       <label for="name" id="name-label">Name:<abbr title="This field is mandatory">*</abbr></label>
-      <input id="name" type="text" name="name" placeholder="James Bond" required>
+      <input id="name" type="text" name="name" placeholder="Ash Ketchum" required>
 
       <label for="email id="email-label">Email:<abbr title="This field is mandatory">*</abbr></label>
-      <input id="email" type="email" name="email" placeholder="james.bond@hostname.com" required>
+      <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
 
       <label for="number" id="number-label">Number:</label>
-      <input id="number" type="number" min="0" max="151" placeholder="Enter numbers only.">
+      <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
 
       <select id="dropdown" name="drop-down">
         <option value=""></option>
@@ -35,9 +45,9 @@
         <option value=""></option>
       </select>
 
-      <label for="radio-1"><input id="radio-1" type="radio" name="radio-button" default>Radio-1</label>
-      <label for="radio-2"><input id="radio-2" type="radio" name="radio-button">Radio-2</label>
-      <label for="radio-3"><input id="radio-3" type="radio" name="radio-button">Radio-3</label>
+      <label for="radio-1"><input id="radio-1" type="radio" name="radio-button" value="****" default>Radio-1</label>
+      <label for="radio-2"><input id="radio-2" type="radio" name="radio-button" value="****">Radio-2</label>
+      <label for="radio-3"><input id="radio-3" type="radio" name="radio-button" value="****">Radio-3</label>
 
       <label for="checkbox-1"><input id="checkbox-1" type="checkbox" name="check-boxes" value="****">Checkbox-1</label>
       <label for="checkbox-2"><input id="checkbox-2" type="checkbox" name="check-boxes" value="****">Checkbox-2</label>
@@ -47,8 +57,18 @@
       <textarea name="name" rows="8" cols="80"></textarea>
 
       <button id="submit" type="submit" name="submit-button">Submit</button>
+
+      <figure>
+        <img id="pikachu" src="pictures/pikachu.png" alt="Pikachu">
+        <figcaption class="sr-only">A picture of the electic pokemon Pikachu.</figcaption>
+      </figure>
     </form>
     <!-- Form Ends -->
+
+    <figure>
+      <img id="charizard" src="pictures/charizard-800x800.png" alt="Charizard">
+      <figcaption class="sr-only">A picture of the fire Pokemon Charizard.</figcaption>
+    </figure>
 
   </div>
   <!-- Wrapper Ends -->

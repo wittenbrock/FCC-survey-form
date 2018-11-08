@@ -1,3 +1,65 @@
+* { margin: 0; padding: 0; }
+
+
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+#blastoise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+}
+
+#charizard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pikachu {
+  width: 30%;
+  margin: auto;
+}
+
+#survey-form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  background-color: olive;
+  padding: 4rem;
+  margin: 3rem;
+}
+
+/* #survey-form > * {
+  padding: 1rem;
+} */
+
+header {
+  text-align: center;
+}
+
 input:invalid {
   box-shadow: 0 0 5px 1px red;
 }
