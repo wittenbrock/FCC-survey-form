@@ -3,7 +3,6 @@
   Global
   ========================================
 */
-
 * {
   margin: 0;
   padding: 0;
@@ -54,20 +53,7 @@ main {
 }
 
 /*
-  ========================================
-  Background Pokemon
-  ========================================
-*/
 
-#blastoise,
-#charizard figure {
-  object-fit: cover;
-  min-height: 100%;
-  min-width: 100%;
-}
-
-
-/*
   ========================================
   Survey Form
   ========================================
@@ -123,7 +109,6 @@ abbr {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 
 #squirtle-image,
 #bulbasaur-image,
@@ -186,12 +171,17 @@ input:focus:invalid {
 */
 
 @media (max-width: 1100px) {
-  #survey-form {
-    width: 50vw;
+  main {
+    justify-content: center;
   }
 
-  #blastoise, #charizard {
-    display: none
+  #survey-form {
+    width: 50%;
+  }
+
+  #blastoise,
+  #charizard {
+    display: none;
   }
 }
 
