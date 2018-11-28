@@ -13,8 +13,9 @@
 <body>
 
   <main>
-
-    <img id="blastoise" src="pictures/blastoise-800x800.png" alt="Blastoise">
+    <figure>
+      <img id="blastoise" src="pictures/blastoise-800x800.png" alt="Blastoise">
+    </figure>
 
     <!-- Survey Form -->
     <form id="survey-form">
@@ -33,13 +34,13 @@
         </label>
 
       <!-- Email -->
-        <label class="margin-gap"><b>Email:</b>
+        <label id="email-label" class="margin-gap"><b>Email:</b>
           <abbr title="This field is mandatory">*</abbr>
           <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
         </label>
 
       <!-- Pokemon Caught -->
-        <label class="margin-gap"><b>How many Pokemon have you caught?</b>
+        <label id="number-label" class="margin-gap"><b>How many Pokemon have you caught?</b>
           <input id="number" type="number" min="0" max="151" placeholder="Enter numbers only.">
         </label>
 
@@ -59,8 +60,9 @@
 
       <!-- Radio Buttons -->
       <fieldset class="margin-gap">
-        <legend class="radio-container"><b>What starting Pokemon did you choose?</b></legend>
+        <legend><b>What starting Pokemon did you choose?</b></legend>
 
+        <div class="radio-container">
           <div class="squirtle-container">
             <img id="squirtle-image" src="pictures/squirtle.png" alt="squirtle">
             <label>
@@ -81,29 +83,33 @@
               <input id="charmander" type="radio" name="radio-button" value="charmander">
             </label>
           </div>
+        </div>
+
       </fieldset>
 
       <!-- Checkboxes -->
       <fieldset class="margin-gap">
-        <legend class="checkbox-container"><b>What are your favorite types of Pokemon?</b></legend>
+        <legend><b>What are your favorite types of Pokemon?</b></legend>
+          <div class="checkbox-container">
+            <label><input id="bug" type="checkbox" name="check-boxes" value="bug"> Bug</label>
+            <label><input id="dragon" type="checkbox" name="check-boxes" value="dragon"> Dragon</label>
+            <label><input id="ice" type="checkbox" name="check-boxes" value="ice"> Ice</label>
+            <label><input id="fighting" type="checkbox" name="check-boxes" value="fighting"> Fighting</label>
+            <label><input id="fire" type="checkbox" name="check-boxes" value="fire"> Fire</label>
 
-          <label><input id="bug" type="checkbox" name="check-boxes" value="bug"> Bug</label>
-          <label><input id="dragon" type="checkbox" name="check-boxes" value="dragon"> Dragon</label>
-          <label><input id="ice" type="checkbox" name="check-boxes" value="ice"> Ice</label>
-          <label><input id="fighting" type="checkbox" name="check-boxes" value="fighting"> Fighting</label>
-          <label><input id="fire" type="checkbox" name="check-boxes" value="fire"> Fire</label>
+            <label><input id="flying" type="checkbox" name="check-boxes" value="flying"> Flying</label>
+            <label><input id="grass" type="checkbox" name="check-boxes" value="grass"> Grass</label>
+            <label><input id="ghost" type="checkbox" name="check-boxes" value="ghost"> Ghost</label>
+            <label><input id="ground" type="checkbox" name="check-boxes" value="ground"> Ground</label>
+            <label><input id="electric" type="checkbox" name="check-boxes" value="electric"> Electric</label>
 
-          <label><input id="flying" type="checkbox" name="check-boxes" value="flying"> Flying</label>
-          <label><input id="grass" type="checkbox" name="check-boxes" value="grass"> Grass</label>
-          <label><input id="ghost" type="checkbox" name="check-boxes" value="ghost"> Ghost</label>
-          <label><input id="ground" type="checkbox" name="check-boxes" value="ground"> Ground</label>
-          <label><input id="electric" type="checkbox" name="check-boxes" value="electric"> Electric</label>
+            <label><input id="normal" type="checkbox" name="check-boxes" value="normal"> Normal</label>
+            <label><input id="poison" type="checkbox" name="check-boxes" value="poison"> Poison</label>
+            <label><input id="psychic" type="checkbox" name="check-boxes" value="psychic"> Psychic</label>
+            <label><input id="rock" type="checkbox" name="check-boxes" value="rock"> Rock</label>
+            <label><input id="water" type="checkbox" name="check-boxes" value="water"> Water</label>
+          </div>
 
-          <label><input id="normal" type="checkbox" name="check-boxes" value="normal"> Normal</label>
-          <label><input id="poison" type="checkbox" name="check-boxes" value="poison"> Poison</label>
-          <label><input id="psychic" type="checkbox" name="check-boxes" value="psychic"> Psychic</label>
-          <label><input id="rock" type="checkbox" name="check-boxes" value="rock"> Rock</label>
-          <label><input id="water" type="checkbox" name="check-boxes" value="water"> Water</label>
       </fieldset>
 
       <!-- Text area -->
@@ -114,13 +120,18 @@
 
       <!-- Submit Button -->
       <button id="submit" type="submit" name="submit-button">Submit</button>
+      <figure>
+        <img id="pikachu-image" src="pictures/pikachu.png" alt="Pikachu">
+      </figure>
 
-      <img id="pikachu" src="pictures/pikachu.png" alt="Pikachu">
 
     </form>
     <!-- Form Ends -->
 
-    <img id="charizard" src="pictures/charizard-800x800.png" alt="Charizard">
+    <figure>
+      <img id="charizard" src="pictures/charizard-800x800.png" alt="Charizard">
+    </figure>
+
 
   </main>
 

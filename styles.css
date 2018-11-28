@@ -26,10 +26,6 @@ fieldset {
   border: 0;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 /*
   ========================================
   Screen Reader Class
@@ -54,7 +50,6 @@ fieldset {
 main {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   background: linear-gradient(90deg, blue, rgb(120, 162, 197), rgb(238, 123, 35), red);
 }
 
@@ -64,20 +59,13 @@ main {
   ========================================
 */
 
-#blastoise {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 85%;
-  margin: auto;
+#blastoise,
+#charizard figure {
+  object-fit: cover;
+  min-height: 100%;
+  min-width: 100%;
 }
 
-#charizard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
 
 /*
   ========================================
@@ -86,7 +74,6 @@ main {
 */
 
 #survey-form {
-  grid-area: form;
   display: flex;
   flex-direction: column;
   border: 1px #41444F solid;
@@ -94,8 +81,8 @@ main {
   padding: 1rem 4rem 4rem 4rem;
   margin: 3rem;
   background: white;
-  width: 90vw;
   box-shadow: 7px 7px 8px -5px rgba(0, 0, 0, 0.27);
+  width: 100%;
 }
 
 header {
@@ -127,9 +114,7 @@ abbr {
 
 .radio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .radio-container input {
@@ -139,8 +124,12 @@ abbr {
   margin-bottom: 1rem;
 }
 
-.radio-container img {
-  width: 40%;
+
+#squirtle-image,
+#bulbasaur-image,
+#charmander-image,
+#pikachu-image {
+  width: 5%;
   min-width: 4rem;
   margin: auto;
 }
@@ -172,12 +161,10 @@ textarea {
   border: black 1px solid;
 }
 
-#pikachu {
-  width: 30%;
+#pikachu-image {
   min-width: 5rem;
   margin: auto;
   padding-top: 2rem;
-  padding-left: 2.5rem;
 }
 
 input:focus {
