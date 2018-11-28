@@ -12,48 +12,41 @@
 
 <body>
 
-  <div class="wrapper">
+  <main>
 
-    <figure>
-      <img id="blastoise" src="pictures/blastoise-800x800.png" alt="Blastoise">
-      <figcaption class="sr-only">A picture of the water Pokemon Blastoise in the background.</figcaption>
-    </figure>
+    <img id="blastoise" src="pictures/blastoise-800x800.png" alt="Blastoise">
 
     <!-- Survey Form -->
     <form id="survey-form">
 
       <!-- Survey Title -->
       <header>
+        <img src="pictures/pokemon.png" alt="Pokemon Logo">
         <h1 id="title" class="sr-only">Pokemon Survey</h1>
-        <p id="description" class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo.</p>
-
-        <figure>
-          <img src="pictures/pokemon.png" alt="Pokemon Logo">
-          <figcaption class="sr-only">A picture of the Pokemon logo.</figcaption>
-        </figure>
+        <p id="description" class="sr-only">A survey about the original Pokemon series, Red and Blue.</p>
       </header>
 
       <!-- Name -->
-        <label class="bold margin-gap">
-          Name:<abbr title="This field is mandatory">*</abbr>
+        <label id="name-label" class="margin-gap"><b>Name:</b>
+          <abbr title="This field is mandatory">*</abbr>
           <input id="name" type="text" name="name" placeholder="Ash Ketchum" required>
         </label>
 
       <!-- Email -->
-        <label class="bold margin-gap">
-          Email:<abbr title="This field is mandatory">*</abbr>
+        <label class="margin-gap"><b>Email:</b>
+          <abbr title="This field is mandatory">*</abbr>
           <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
         </label>
 
       <!-- Pokemon Caught -->
-        <label class="bold margin-gap">
-          How many Pokemon have you caught?
+        <label class="margin-gap"><b>How many Pokemon have you caught?</b>
           <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
         </label>
 
       <!-- Dropdown -->
       <fieldset class="margin-gap">
-        <legend class="bold">When did you first start playing Pokemon?</legend>
+        <legend><b>When did you first start playing Pokemon?</b></legend>
+
         <select id="dropdown" name="drop-down">
           <option value="elementary-school">Elementary School</option>
           <option value="middle-school">Middle School</option>
@@ -61,39 +54,31 @@
           <option value="univeristy">University</option>
           <option value="after-university">After University</option>
         </select>
+
       </fieldset>
 
       <!-- Radio Buttons -->
       <fieldset class="margin-gap">
-        <legend class="bold">What starting Pokemon did you choose?</legend>
+        <legend><b>What starting Pokemon did you choose?</b></legend>
 
         <div class="radio-container">
 
           <div class="squirtle-container">
-            <figure>
-              <img id="squirtle-image" src="pictures/squirtle.png" alt="squirtle">
-              <figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption>
-            </figure>
+            <img id="squirtle-image" src="pictures/squirtle.png" alt="squirtle">
             <label>
               <input id="squirtle" type="radio" name="radio-button" value="squirtle">
             </label>
           </div>
 
           <div class="bulbasaur-container">
-            <figure>
-              <img id="bulbasaur-image" src="pictures/bulbasaur.png" alt="bulbasaur">
-              <figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption>
-            </figure>
+            <img id="bulbasaur-image" src="pictures/bulbasaur.png" alt="bulbasaur">
             <label>
               <input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default>
             </label>
           </div>
 
           <div class="charmander-container">
-            <figure>
-              <img id="charmander-image" src="pictures/charmander.png" alt="charmander">
-              <figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption>
-            </figure>
+            <img id="charmander-image" src="pictures/charmander.png" alt="charmander">
             <label>
               <input id="charmander" type="radio" name="radio-button" value="charmander">
             </label>
@@ -104,7 +89,7 @@
 
       <!-- Checkboxes -->
       <fieldset class="margin-gap">
-        <legend class="bold">What are your favorite types of Pokemon?</legend>
+        <legend><b>What are your favorite types of Pokemon?</b></legend>
 
         <div class="checkbox-container">
 
@@ -130,26 +115,23 @@
 
       <!-- Text area -->
       <fieldset class="margin-gap">
-        <legend class="bold">What did you enjoy most about Pokemon?</legend>
+        <legend><b>What did you enjoy most about Pokemon?</b></legend>
         <textarea name="name" rows="8" cols="80"></textarea>
       </fieldset>
 
       <!-- Submit Button -->
       <button id="submit" type="submit" name="submit-button">Submit</button>
 
-      <figure>
-        <img id="pikachu" src="pictures/pikachu.png" alt="Pikachu">
-        <figcaption class="sr-only">A picture of the electic Pokemon Pikachu.</figcaption>
-      </figure>
+      <img id="pikachu" src="pictures/pikachu.png" alt="Pikachu">
+
     </form>
     <!-- Form Ends -->
 
-    <figure>
-      <img id="charizard" src="pictures/charizard-800x800.png" alt="Charizard">
-      <figcaption class="sr-only">A picture of the fire Pokemon Charizard in the background.</figcaption>
-    </figure>
+    <img id="charizard" src="pictures/charizard-800x800.png" alt="Charizard">
 
-  </div>
+
+  </main>
+
   <!-- Wrapper Ends -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
