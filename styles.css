@@ -1,3 +1,9 @@
+/*
+  ========================================
+  Global
+  ========================================
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +30,12 @@ fieldset {
   font-weight: bold;
 }
 
+/*
+  ========================================
+  Screen Reader Class
+  ========================================
+*/
+
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -32,15 +44,26 @@ fieldset {
   top: auto;
   overflow: hidden;
 }
-/* Wrapper */
-.wrapper {
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
+
+main {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background: linear-gradient(90deg, blue, rgb(120, 162, 197), rgb(238, 123, 35), red);
 }
 
-/* Background Pokemon */
+/*
+  ========================================
+  Background Pokemon
+  ========================================
+*/
+
 #blastoise {
   display: flex;
   align-items: center;
@@ -56,7 +79,12 @@ fieldset {
   margin: auto;
 }
 
-/* Inside Survey Form */
+/*
+  ========================================
+  Survey Form
+  ========================================
+*/
+
 #survey-form {
   grid-area: form;
   display: flex;
@@ -164,7 +192,12 @@ input:focus:invalid {
   outline: none;
 }
 
-/* Media Queries */
+/*
+  ========================================
+  Media Queries
+  ========================================
+*/
+
 @media (max-width: 1100px) {
   #survey-form {
     width: 50vw;
