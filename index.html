@@ -24,31 +24,32 @@
 
       <!-- Survey Title -->
       <header>
+        <h1 id="title" class="sr-only">Pokemon Survey</h1>
+        <p id="description" class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo.</p>
+
         <figure>
           <img src="pictures/pokemon.png" alt="Pokemon Logo">
           <figcaption class="sr-only">A picture of the Pokemon logo.</figcaption>
         </figure>
-        <h1 id="title" class="sr-only">Pokemon Survey</h1>
-        <p id="description" class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo.</p>
       </header>
 
       <!-- Name -->
-      <div class="margin-gap">
-        <label for="name" id="name-label" class="bold">Name:<abbr title="This field is mandatory">*</abbr></label>
-        <input id="name" type="text" name="name" placeholder="Ash Ketchum" required>
-      </div>
+        <label class="bold margin-gap">
+          Name:<abbr title="This field is mandatory">*</abbr>
+          <input id="name" type="text" name="name" placeholder="Ash Ketchum" required>
+        </label>
 
       <!-- Email -->
-      <div class="margin-gap">
-        <label for="email id=" email-label" class="bold">Email:<abbr title="This field is mandatory">*</abbr></label>
-        <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
-      </div>
+        <label class="bold margin-gap">
+          Email:<abbr title="This field is mandatory">*</abbr>
+          <input id="email" type="email" name="email" placeholder="ash.ketchum@hostname.com" required>
+        </label>
 
       <!-- Pokemon Caught -->
-      <div id="pokemon-caught" class="margin-gap">
-        <label for="number" id="number-label" class="bold">How many Pokemon have you caught?</label>
-        <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
-      </div>
+        <label class="bold margin-gap">
+          How many Pokemon have you caught?
+          <input id="number" type="number" min="0" max="151" pattern="\d+" placeholder="Enter numbers only.">
+        </label>
 
       <!-- Dropdown -->
       <fieldset class="margin-gap">
@@ -65,52 +66,65 @@
       <!-- Radio Buttons -->
       <fieldset class="margin-gap">
         <legend class="bold">What starting Pokemon did you choose?</legend>
+
         <div class="radio-container">
 
           <div class="squirtle-container">
-            <figure><img id="squirtle-image" src="pictures/squirtle.png" alt="squirtle">
+            <figure>
+              <img id="squirtle-image" src="pictures/squirtle.png" alt="squirtle">
               <figcaption class="sr-only">A picture of the starter Pokemon, Squirtle.</figcaption>
             </figure>
-            <label for="squirtle"><input id="squirtle" type="radio" name="radio-button" value="squirtle"></label>
+            <label>
+              <input id="squirtle" type="radio" name="radio-button" value="squirtle">
+            </label>
           </div>
 
           <div class="bulbasaur-container">
-            <figure><img id="bulbasaur-image" src="pictures/bulbasaur.png" alt="bulbasaur">
+            <figure>
+              <img id="bulbasaur-image" src="pictures/bulbasaur.png" alt="bulbasaur">
               <figcaption class="sr-only">A picture of the starter Pokemon, Bulbasaur.</figcaption>
             </figure>
-            <label for="bulbasaur"><input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default></label>
+            <label>
+              <input id="bulbasaur" type="radio" name="radio-button" value="bulbasaur" default>
+            </label>
           </div>
 
           <div class="charmander-container">
-            <figure><img id="charmander-image" src="pictures/charmander.png" alt="charmander">
+            <figure>
+              <img id="charmander-image" src="pictures/charmander.png" alt="charmander">
               <figcaption class="sr-only">A picture of the starter Pokemon, Charmander.</figcaption>
             </figure>
-            <label for="charmander"><input id="charmander" type="radio" name="radio-button" value="charmander"></label>
+            <label>
+              <input id="charmander" type="radio" name="radio-button" value="charmander">
+            </label>
           </div>
+
         </div>
       </fieldset>
 
       <!-- Checkboxes -->
       <fieldset class="margin-gap">
         <legend class="bold">What are your favorite types of Pokemon?</legend>
+
         <div class="checkbox-container">
-          <label for="bug"><input id="bug" type="checkbox" name="check-boxes" value="bug"> Bug</label>
-          <label for="dragon"><input id="dragon" type="checkbox" name="check-boxes" value="dragon"> Dragon</label>
-          <label for="ice"><input id="ice" type="checkbox" name="check-boxes" value="ice"> Ice</label>
-          <label for="fighting"><input id="fighting" type="checkbox" name="check-boxes" value="fighting"> Fighting</label>
-          <label for="fire"><input id="fire" type="checkbox" name="check-boxes" value="fire"> Fire</label>
 
-          <label for="flying"><input id="flying" type="checkbox" name="check-boxes" value="flying"> Flying</label>
-          <label for="grass"><input id="grass" type="checkbox" name="check-boxes" value="grass"> Grass</label>
-          <label for="ghost"><input id="ghost" type="checkbox" name="check-boxes" value="ghost"> Ghost</label>
-          <label for="ground"><input id="ground" type="checkbox" name="check-boxes" value="ground"> Ground</label>
-          <label for="electric"><input id="electric" type="checkbox" name="check-boxes" value="electric"> Electric</label>
+          <label><input id="bug" type="checkbox" name="check-boxes" value="bug"> Bug</label>
+          <label><input id="dragon" type="checkbox" name="check-boxes" value="dragon"> Dragon</label>
+          <label><input id="ice" type="checkbox" name="check-boxes" value="ice"> Ice</label>
+          <label><input id="fighting" type="checkbox" name="check-boxes" value="fighting"> Fighting</label>
+          <label><input id="fire" type="checkbox" name="check-boxes" value="fire"> Fire</label>
 
-          <label for="normal"><input id="normal" type="checkbox" name="check-boxes" value="normal"> Normal</label>
-          <label for="poison"><input id="poison" type="checkbox" name="check-boxes" value="poison"> Poison</label>
-          <label for="psychic"><input id="psychic" type="checkbox" name="check-boxes" value="psychic"> Psychic</label>
-          <label for="rock"><input id="rock" type="checkbox" name="check-boxes" value="rock"> Rock</label>
-          <label for="water"><input id="water" type="checkbox" name="check-boxes" value="water"> Water</label>
+          <label><input id="flying" type="checkbox" name="check-boxes" value="flying"> Flying</label>
+          <label><input id="grass" type="checkbox" name="check-boxes" value="grass"> Grass</label>
+          <label><input id="ghost" type="checkbox" name="check-boxes" value="ghost"> Ghost</label>
+          <label><input id="ground" type="checkbox" name="check-boxes" value="ground"> Ground</label>
+          <label><input id="electric" type="checkbox" name="check-boxes" value="electric"> Electric</label>
+
+          <label><input id="normal" type="checkbox" name="check-boxes" value="normal"> Normal</label>
+          <label><input id="poison" type="checkbox" name="check-boxes" value="poison"> Poison</label>
+          <label><input id="psychic" type="checkbox" name="check-boxes" value="psychic"> Psychic</label>
+          <label><input id="rock" type="checkbox" name="check-boxes" value="rock"> Rock</label>
+          <label><input id="water" type="checkbox" name="check-boxes" value="water"> Water</label>
         </div>
       </fieldset>
 
@@ -137,6 +151,7 @@
 
   </div>
   <!-- Wrapper Ends -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
