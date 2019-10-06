@@ -18,7 +18,7 @@ html {
 img {
   max-width: 100%;
   display: block;
-  height: auto;
+/*  height: auto;*/
 }
 
 fieldset {
@@ -100,7 +100,7 @@ abbr {
 
 .radio-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .radio-container input {
@@ -113,8 +113,10 @@ abbr {
 #squirtle-image,
 #bulbasaur-image,
 #charmander-image,
-#pikachu-image {
-  width: 5%;
+#pikachu-image,
+#pokeball-image {
+  width: 70px;
+	height: 75px;
   min-width: 4rem;
   margin: auto;
 }
@@ -146,7 +148,7 @@ textarea {
   border: black 1px solid;
 }
 
-#pikachu-image {
+#pokeball-image {
   min-width: 5rem;
   margin: auto;
   padding-top: 2rem;
